@@ -1,16 +1,32 @@
-An introduction to Programming in Ruby using irb
+An introduction to Programming in PHP using the interactive PHP shell (http://www.php.net/manual/en/features.commandline.interactive.php)
 === Getting started ===
-* irb is the Interactive RuBy shell.  You can type Ruby code and it will be evaluated immediately. You can try some code that will seem familiar:
-    >> 1 + 1
-* try a few different calculations
-* now try this one
-    >> "c" + "ode"
-* why was this different? in Ruby everything is an object and each object has behaviors it knows how to do.  Numbers know how to add.  However "c" is not a number, so it behaves differently even when it gets the same message (+).  Programmers call "c" or "ode" a "string." A string is series of letters that could be a word or a sentence.  In Ruby the string behavior triggered by the (+) message is concatenation.
+* The Interactive PHP shell lets you type PHP code that will be evaluated immediately. You can try some code that will seem familiar:
+To try this out, you will already need to have PHP installed, and be able to access the command line on your computer. (For help on how to get set up, see InstallFest (http://phpbridge.org/installfest/)
+1. Open a terminal.
+2. To open the interactive shell type php -a and hit return.
+
+Your prompt will change to
+php >
+
+3. Type "echo 1+1;
+Hit return.
+
+Do you see the answer?
+
+* Go ahead and try a few different calculations.
+* now try this classic.
+
+echo "Hello, world!";
+
+echo "C" . "ode";
+--------------------------- beyond this line, there be dragons -----------------------------
+* why was this different? in PHP everything is an object and each object has behaviors it knows how to do.  Numbers know how to add.  However "c" is not a number, so it behaves differently even when it gets the same message (+).  Programmers call "c" or "ode" a "string." A string is series of letters that could be a word or a sentence.  In PHP the string behavior triggered by the (+) message is concatenation.
+
 * Operators like + - * / are special since we want to use them like we did in grade school.
 * Most messages (which are also called methods) are called by adding the message name after a .
     >> "code".upcase
     >> "code".reverse
-* Another thing to notice about Ruby is that everything evaluates to something
+* Another thing to notice about PHP is that everything evaluates to something
     >> 4
     >> 4 + 4
     >> (4+4).zero?
