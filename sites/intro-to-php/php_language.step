@@ -226,15 +226,14 @@ pluralize("kiwi");
   end
 
   step do
-    message "When using PHP outside of Psysh, you should put it inside `<?php` and `?>` tags:"
+    message "When using PHP outside of Psysh, you should put a `<?php` tag at the beginning of the file:"
 
     source_code :php, <<-PHP
     <?php
     // Code goes Here
-    ?>
     PHP
 
-    tip "You may notice the two-slashes at the start of the middle line above. This is known as a comment and is ignored by PHP."
+    tip "You may notice the two-slashes at the start of the second line above. This is known as a comment and is ignored by PHP."
   end
 
   step do

@@ -45,7 +45,6 @@ steps do
 
 				}
 			}
-			?>
 		PHP
 
 		message "Our router will call these methods, instead of including our `.php` files."
@@ -125,7 +124,6 @@ steps do
 				'title' => 'Suggestotron!',
 				'view_path' => realpath('../views')
 			];
-			?>
 		PHP
 
 		message "You probably already noticed that our calls the `$this->template->render()` are very similar in each action."

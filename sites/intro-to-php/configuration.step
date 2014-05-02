@@ -13,7 +13,6 @@ steps do
 			return [
 				'class_path' => realpath('../src')
 			];
-			?>
 		PHP
 	end
 
@@ -50,7 +49,6 @@ steps do
 		<?php
 		require_once '../src/Suggestotron/Config';
 		\\Suggestotron\\Config::setDirectory('../config');
-		?>
 		PHP
 
 		message "Once you have done this, the configuration is available everywhere using:"
@@ -94,7 +92,6 @@ steps do
 			"hostname" => "localhost",
 			"dbname" => "suggestotron",
 		];
-		?>
 		PHP
 	end
 
@@ -119,7 +116,6 @@ steps do
 		return [
 			"title" => "Suggestotron"
 		];
-		?>
 		PHP
 	end
 

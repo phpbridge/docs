@@ -15,7 +15,6 @@ steps do
 			class TopicData {
 				// CLASS CONTENTS GO HERE
 			}
-			?>
 		PHP
 	end
 
@@ -32,7 +31,6 @@ steps do
 					$this->connection = new PDO("mysql:host=localhost;dbname=suggestotron", "root", "root");
 				}
 			}
-			?>
 		PHP
 	end
 
@@ -58,7 +56,6 @@ steps do
 					return $query;
 				}
 			}
-			?>
 		PHP
 
 		tip "Notice how we use the same `SELECT` as in the previous section"

@@ -47,7 +47,6 @@ steps do
 					require $this->page;
 				}
 			}
-			?>
 		PHP
 
 		important "We are not the first people to create a `Template` class, to prevent it from conflicting with other peoples code, we use a namespace to make it unique. In this case, `Suggestotron`."
@@ -155,7 +154,6 @@ steps do
 		    <hr>
 		    <?php
 		}
-		?>
 		PHP
 
 		message "Our topic data, previously assigned to `$topics` is now assigned to `$this->topics` by our template class. The first thing we do in our template file is re-assign it to `$topics` so we can use it easily inside our template."
@@ -175,7 +173,6 @@ steps do
 
 			$template = new \\Suggestotron\\Template("../views/base.phtml");
 			$template->render("../views/index/index.phtml", ['topics' => $topics]);
-			?>
 		PHP
 
 		tip "Notice how we pass the `$topics` variable into the `$template->render()` function. This allows our template to access the data we want it to. It will be accessible as `$this->topics` within the template."
@@ -242,7 +239,6 @@ steps do
 
 			$template = new \\Suggestotron\\Template("../views/base.phtml");
 			$template->render("../views/index/add.phtml");
-			?>
 		PHP
 	end
 
@@ -302,7 +298,6 @@ steps do
 
 			$template = new \\Suggestotron\\Template("../views/base.phtml");
 			$template->render("../views/index/edit.phtml", ['topic' => $topic]);
-			?>
 		PHP
 	end
 
@@ -332,7 +327,6 @@ steps do
 			} else {
 			    echo "An error occurred";
 			}
-			?>
 		PHP
 	end
 end

@@ -19,7 +19,6 @@ steps do
 				echo "</p>";
 				echo "<p><a href='/edit.php?id=" .$topic['id']. "'>Edit</a></p>";
 			}
-			?>
 		PHP
 
 		message "The link has been added at the end of our `foreach`. The link has an argument for the `id`."
@@ -91,7 +90,6 @@ steps do
 
 		$data = new TopicData();
 		$topic = $data->getTopic($_GET['id']);
-		?>
 		PHP
 
 		message "At this point, you should be able to see your topic data in the edit form, but if you submit the form nothing will change (yet)."
@@ -135,7 +133,6 @@ steps do
 			echo "Topic not found!";
 			exit;
 		}
-		?>
 		PHP
 
 		message "We use `isset`, and `empty` to check that the variable exists, and has a value"

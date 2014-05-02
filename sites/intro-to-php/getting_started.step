@@ -47,7 +47,6 @@ Select your `suggestotron` directory from the file picker that opens. If everyth
     source_code :php, <<-PHP
       <?php
       phpinfo();
-      ?>
     PHP
   end
 

@@ -36,7 +36,6 @@ steps do
 		source_code :php, <<-PHP
 			<?php
 			var_dump($_POST);
-			?>
 		PHP
 
 		tip "We are using a `POST` action in our `<form>`, therefore the data will be available in the `$_POST` super global."
@@ -55,7 +54,6 @@ steps do
 				$data = new TopicData();
 				$data->add($_POST);
 			}
-			?>
 		PHP
 
 		message "Submitting the form in your browser will now show this:"
