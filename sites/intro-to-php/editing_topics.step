@@ -13,11 +13,11 @@ steps do
 		source_code :php, <<-PHP
 			<?php
 			foreach ($topics as $topic) {
-				echo "<h3>{$topic['title']} (ID: {$topic['id']})</h3>";
+                echo "<h3>{$topic['title']} (ID: {$topic['id']})</h3>";
                 echo "<p>";
                 echo nl2br($topic['description']);
                 echo "</p>";
-				echo "<p><a href='/edit.php?id={$topic['id']}'>Edit</a></p>";
+                echo "<p><a href='/edit.php?id={$topic['id']}'>Edit</a></p>";
 			}
 			?>
 		PHP
