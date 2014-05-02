@@ -23,7 +23,6 @@ steps do
 				echo "<a href='/delete.php?id=" .$topic['id']. "'>Delete</a>";
 				echo "</p>";
 			}
-			?>
 		PHP
 	end
 
@@ -53,7 +52,6 @@ steps do
 			} else {
 			    echo "An error occurred";
 			}
-			?>
 		PHP
 	end
 

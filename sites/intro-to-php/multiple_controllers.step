@@ -257,7 +257,6 @@ steps do
 				$this->render("/errors/index.phtml", ['message' => "Page not found!" ]);
 			}
 		}
-		?>
 		PHP
 
 		message "This simple controller sends the 404 error header, and then renders the appropriate view, `errors/index` which looks like this:"

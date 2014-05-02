@@ -100,7 +100,6 @@ steps do
 
 		$router = new \\Suggestotron\\Router();
 		$router->start($route);
-		?>
 		PHP
 	end
 
