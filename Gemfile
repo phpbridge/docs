@@ -22,4 +22,6 @@ group :development do
   gem 'rb-fsevent', :platform => :ruby
 end
 
-gem 'debugger', group: [:development, :test]
+group :development, :test do
+  gem 'debugger'
+end
