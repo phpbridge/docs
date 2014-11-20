@@ -45,7 +45,7 @@ To server sites from another locale (say, "es" or Spanish)...
 
 ## Contributing
 
-Check out [CONTRIBUTING.md](CONTRIBUTING.md) to see how to join our [list of contributors](https://github.com/railsbridge/docs/contributors)!
+Check out [CONTRIBUTING.md](CONTRIBUTING.md) to see how to join our [list of contributors](https://github.com/phpbridge/docs/graphs/contributors)!
 
 ## Resources
 
