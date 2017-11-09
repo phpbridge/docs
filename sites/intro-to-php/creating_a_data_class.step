@@ -20,16 +20,16 @@ steps do
 	end
 
 	step do
-		message "Now create a connect function:"
+		message "Now create a constructor that will assign a PDO instance to a class variable:"
 
 		source_code :php, <<-PHP
 			<?php
 			class TopicData {
 				protected $connection;
 			
-				public function connect()
+				public function __construct($pdo)
 				{
-					$this->connection = new PDO("mysql:host=localhost;dbname=suggestotron", "root", "root");
+					$this->connection = $pdo;
 				}
 			}
 			?>
@@ -43,11 +43,11 @@ steps do
 			<?php
 			class TopicData {
 
-				protected $connection = null;
+				protected $connection;
 
-				public function connect()
+				public function __construct($pdo)
 				{
-					$this->connection = new PDO("mysql:host=localhost;dbname=suggestotron", "root", null);
+					$this->connection = $pdo;
 				}
 
 				public function getAllTopics()
@@ -70,10 +70,9 @@ steps do
 		source_code :php, <<-PHP
 			<?php
 			require 'TopicData.php';
+                        $pdo = new PDO("mysql:host=localhost;dbname=suggestotron", "root", "root");
 
-			$data = new TopicData();
-			$data->connect();
-
+			$data = new TopicData($pdo);
 			$topics = $data->getAllTopics();
 		PHP
 
